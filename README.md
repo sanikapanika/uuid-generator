@@ -19,4 +19,9 @@ Script:
 java --class-path=<UuidGenerator.class location> UuidGenerator
 ``` 
 
-Type uuid in terminal and voila
+## Usage
+```shell script
+$ uuid
+
+$ uuid <how many>
+```
