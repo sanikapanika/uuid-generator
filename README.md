@@ -1,4 +1,4 @@
-## uuid-generator
+## simple-uuid-generator
 
 Generate uuids by typing `uuid` in terminal
 
