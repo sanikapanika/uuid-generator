@@ -30,6 +30,6 @@ $ uuid
 
 $ uuid <n>
 
-$ uuid <n> shopware
+$ uuid <n> nodash
 (generate (n) uuid4 strings without dashes)
 ```
