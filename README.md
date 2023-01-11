@@ -4,6 +4,8 @@ Generate uuids by typing `uuid` in terminal
 
 ## Setup
 
+If the repo is updated, just do the steps below.
+
 ### Auto
 1. Clone the repo
 2. Run `sudo bash autoinstall.sh`
