@@ -6,17 +6,26 @@ public class UuidGenerator {
         int n = 0;
         int limit = 1;
         if (args.length == 0) {
-            System.out.println(UUID.randomUUID().toString());
+            System.out.println(UUID.randomUUID().toString().toUpperCase());
         }
-        else if(args.length == 1) {
+        else if(args.length > 0) {
             try {
                 limit = Integer.parseInt(args[0]);
             } catch (Throwable e) {
                 System.out.println(e.getMessage());
             }
             do {
-                System.out.println(UUID.randomUUID().toString());
-                ++n;
+		if (args.length > 1) {
+		    if (args[1].equals("shopware")) {
+			String uuid = UUID.randomUUID().toString();
+			uuid = uuid.replace("-", "");
+			System.out.println(uuid.toUpperCase());
+			++n;
+		    }
+		} else {
+		    System.out.println(UUID.randomUUID().toString().toUpperCase());
+                    ++n;
+		}
             } while (n < limit);
         } else {
             System.out.println("Invalid usage!\n\nExamples: \nuuid\nuuid 4");

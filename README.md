@@ -28,5 +28,8 @@ java --class-path=<UuidGenerator.class location> UuidGenerator
 ```shell script
 $ uuid
 
-$ uuid <how many>
+$ uuid <n>
+
+$ uuid <n> shopware
+(generate (n) uuid4 strings without dashes)
 ```
